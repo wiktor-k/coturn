@@ -1,0 +1,9 @@
+version: '2'
+services:
+  coturn:
+    build: .
+    network_mode: "host"
+    volumes:
+      - ./turnserver.conf:/etc/coturn/turnserver.conf:ro
+      - /etc/letsencrypt/:/etc/letsencrypt/:ro
+
