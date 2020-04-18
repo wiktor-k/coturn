@@ -4,6 +4,8 @@ Replace all `CUSTOMIZE THIS` strings inside the config and run with `docker-comp
 
 As for Prosody side see https://prosody.im/doc/coturn
 
+See https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#av-calls-in-conversations for more technical details.
+
 ## ejabberd
 
 Subscribe to this ticket: https://github.com/processone/ejabberd/issues/2947
