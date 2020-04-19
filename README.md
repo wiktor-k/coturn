@@ -12,7 +12,7 @@ Subscribe to this ticket: https://github.com/processone/ejabberd/issues/2947
 
 ## Prosody
 
-Make sure you have `mod_turncredentials` installed and it's the latest version.
+Make sure you have `mod_turncredentials` installed from prosody-modules repository (see https://prosody.im/doc/installing_modules) and it's the latest version.
 
 You can check if you got this part right via CAAS: https://compliance.conversations.im/test/stun/ and https://compliance.conversations.im/test/turn/ or via local installation: https://github.com/iNPUTmice/caas
 
