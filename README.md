@@ -12,9 +12,11 @@ Subscribe to this ticket: https://github.com/processone/ejabberd/issues/2947
 
 ## Prosody
 
-Make sure you have `mod_turncredentials` installed from prosody-modules repository (see https://prosody.im/doc/installing_modules) and it's the latest version.
+Make sure you have `mod_turncredentials` installed from prosody-modules repository (see https://prosody.im/doc/installing_modules) and it's the latest version. This is **important** as there were [compatibility fixes](https://hg.prosody.im/prosody-modules/rev/bbfcd786cc78) merged upstream on 18.04.2020.
 
 You can check if you got this part right via CAAS: https://compliance.conversations.im/test/stun/ and https://compliance.conversations.im/test/turn/ or via local installation: https://github.com/iNPUTmice/caas
+
+If CAAS tests fail check if you updated your Prosody modules.
 
 Alternatively use XML console (replace `shakespeare.lit` with your own domain):
 
@@ -29,11 +31,11 @@ Alternatively use XML console (replace `shakespeare.lit` with your own domain):
 
 Response should contain two STUN and two TURN servers for Prosody.
 
-If you have battery saver module installed you may need this patch: https://gist.github.com/wiktor-k/44cc5653aaccd7a77818a4e4d9f03949
+If you have **battery saver module** installed update it too from upstream ([patch](https://hg.prosody.im/prosody-modules/rev/19c5bfc3a241)).
 
 ## Checking TURN
 
-Open this site:
+This checks if your coturn server is configured correctly.
 
 https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
 
