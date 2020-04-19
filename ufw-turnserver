@@ -1,0 +1,5 @@
+# put in /etc/ufw/applications.d/ufw-turnserver and run `sudo ufw app update turnserver && ufw allow turnserver`
+[turnserver]
+title=turnserver
+description=ports for coturn turnserver
+ports=3478|5349|49152:65535/udp
