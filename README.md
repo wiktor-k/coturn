@@ -45,6 +45,10 @@ Insert your stun server there: `stun:example.com:3478` (replace domain and port 
 
 Get credentials using XML console like in the previous step and insert the TURN server: `turn:example.com:3478` select `relay` checkbox and click Gather candidates. You should get some `relay` components.
 
+![TURN relay candidates on site output](relay.png)
+
+Site output should contain several Type = relay components.
+
 ## Checking TURN in Conversations
 
 Get adb running on one phone and grep for `relay`:
