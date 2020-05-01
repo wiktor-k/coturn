@@ -66,3 +66,8 @@ remote candidate selected: :-1:candidate:700011408 1 udp 41888255 ... 63762 typ 
 
 Ideally it should have `selected` candidate with `typ relay`. Try to get phones behind NAT (two different WiFi networks or one mobile one WiFi).
 
+## Note about IPv6 connections
+
+Some networks using IPv6 with Dual-Stack-Lite PCP (such as Orange PL) will fail the TURN connection silently. If you're experiencing connection issues on LTE make sure that your coturn has explicitly listed `listening-ip` for both IPv4 and IPv6.
+
+Thanks for gdr, Holger and k8n from the Conversations channel (2020-04-30 23:17).
