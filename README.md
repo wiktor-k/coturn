@@ -71,3 +71,8 @@ Ideally it should have `selected` candidate with `typ relay`. Try to get phones 
 Some networks using IPv6 with Dual-Stack-Lite PCP (such as Orange PL) will fail the TURN connection silently. If you're experiencing connection issues on LTE make sure that your coturn has explicitly listed `listening-ip` for both IPv4 and IPv6.
 
 Thanks for gdr, Holger and k8n from the Conversations channel (2020-04-30 23:17).
+
+More details at https://dasheimnetzwerk.de/Lexikon/Netzwerkkonzepte/Eintrag_DSLite.html
+
+> Potential problems caused by Dual-Stack Lite (DS-Lite):
+> * Voice over IP calls using the SIP protocol.
