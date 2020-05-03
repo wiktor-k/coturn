@@ -76,3 +76,6 @@ More details at https://dasheimnetzwerk.de/Lexikon/Netzwerkkonzepte/Eintrag_DSLi
 
 > Potential problems caused by Dual-Stack Lite (DS-Lite):
 > * Voice over IP calls using the SIP protocol.
+
+https://conference.apnic.net/data/37/2014-02-24-transition-technologies-tutorial_1393291083.pdf
+
