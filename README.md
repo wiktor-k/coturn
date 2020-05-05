@@ -4,11 +4,13 @@ Replace all `CUSTOMIZE THIS` strings inside the config and run with `docker-comp
 
 As for Prosody side see https://prosody.im/doc/coturn
 
-See https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#av-calls-in-conversations for more technical details.
+[iNPUTmice's A/V calls in Conversations](https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#av-calls-in-conversations) provides more technical details.
 
 ## ejabberd
 
-Subscribe to this ticket: https://github.com/processone/ejabberd/issues/2947
+ejabberd has built in STUN/TURN server so you won't need coturn (you still *can* use coturn if you like). Just [upgrade to 20.04](https://www.process-one.net/blog/ejabberd-20-04/).
+
+Then follow [instructions for ejabberd](https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#instructions-for-ejabberd).
 
 ## Prosody
 
