@@ -33,7 +33,21 @@ Alternatively use XML console (replace `shakespeare.lit` with your own domain):
 
 Response should contain two STUN and two TURN servers for Prosody.
 
-If you have **battery saver module** installed update it too from upstream ([patch](https://hg.prosody.im/prosody-modules/rev/19c5bfc3a241)).
+If you get `service-unavailable` error as a reply then most likely you don't have the module installed or the installed version is too old.
+
+Verify if `urn:xmpp:extdisco:2` is listed as an advertised feature:
+
+```xml
+<iq type='get'
+    to='shakespeare.lit'
+    id='info1'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>
+```
+
+If only the first version is available (`urn:xmpp:extdisco:1`) then the module that you have is outdated.
+
+If you have **battery saver module** installed update it too from upstream ([patch](https://hg.prosody.im/prosody-modules/rev/19c5bfc3a241)) or you won't receive calls when the application is in the background.
 
 ## Checking TURN
 
