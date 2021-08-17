@@ -59,7 +59,7 @@ Remove all servers.
 
 Insert your stun server there: `stun:example.com:3478` (replace domain and port name).
 
-Get credentials using XML console like in the previous step and insert the TURN server: `turn:example.com:3478` select `relay` checkbox and click Gather candidates. You should get some `relay` components.
+Get credentials using the [make-credentials script](https://github.com/processone/eturnal/blob/master/scripts/examples/make-credentials) or the XML console like in the previous step and insert the TURN server: `turn:example.com:3478` select `relay` checkbox and click Gather candidates. You should get some `relay` components.
 
 ![TURN relay candidates on site output](relay.png)
 
